@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- saved from url=(0275)https://eade5538-902f-4963-87b9-4a730f97a625.dev.wix-code.com/_partials/wix-thunderbolt-ds/1.2877.0/workerIframeWrapper.html?localWorker=false&productionWorker=false&workerUrl=https://static.parastorage.com/services/wix-thunderbolt-ds/dist/clientWorker.4f3f0c0e.bundle.min.js -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+<script src="./workerIframeWrapper.04ee1bb3.bundle.min.js.下載"></script></head>
+<body>
+<script type="application/javascript">
+  function isEditorOrigin(origin) {
+    return ['https://editor.wix.com', 'https://create.editorx.com', 'https://blocks.wix.com'].includes(origin)
+  }
+
+  const listener = function(params) {
+    if (!params.data || !params.data.workerWrapperScript || !isEditorOrigin(params.origin)) {
+      return
+    }
+
+    const script = document.createElement('script')
+    script.src = params.data.workerWrapperScript
+    document.head.appendChild(script)
+    window.removeEventListener('message', listener)
+  }
+
+  window.addEventListener('message', listener)
+</script>
+
+
+</body></html>
